@@ -1,0 +1,36 @@
+<div ng-controller="NavigationController as ctrl">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand header-placeholder" href="#">Training center</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-pills">
+                    <li><a href="#/training">Trainings <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#/coach">Coaches</a></li>
+                    <form class="navbar-form navbar-right" role="search" ng-submit="ctrl.login()">
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="credentials.username" name="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="credentials.password" name="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default">Sign In</button>
+                    </form>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
